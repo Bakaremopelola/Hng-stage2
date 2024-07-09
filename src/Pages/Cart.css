@@ -82,8 +82,8 @@
   display: flex;
   flex-direction: column;
   width: 80vw;
-  justify-content: start;
-  align-items: start;
+  /* justify-content: start;
+  align-items: start; */
 }
 
 .cart-item {
@@ -97,7 +97,7 @@
   width: 80px;
   height: 80px;
   object-fit: cover;
-  draggable: false;
+  
 }
 
 .cart-item-title {
@@ -356,12 +356,12 @@
   display: none;
 }
 
-.cart-item-price{
+/* .cart-item-price{
   display: none;
 }
 .cart-item-total-price{
   display: none;
-}
+} */
 
 .cart-item{
   margin: 1em 0;

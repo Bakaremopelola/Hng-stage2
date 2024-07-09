@@ -95,7 +95,7 @@ const CartPage = () => {
               <p className='sam'>SUBTOTAL: <p >N {subtotal}</p></p>
               <p className='sam'>SHIPPING: <p >N {shipping}</p></p>
               <p className='sam'>TOTAL: <p >N {total}</p></p>
-               <button className="checkout-button">Checkout</button> 
+              <button className="checkout-button">Checkout</button> 
             </div>
           </div>
         </div>
