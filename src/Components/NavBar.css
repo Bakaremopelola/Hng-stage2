@@ -74,23 +74,100 @@ input{
 .Search_icon_show{
     display: none;
 }
+
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and medium-sized screens */
 @media only screen and (max-width: 768px) {
-    .navbar-button{
-        display: block
-    }
-  .navbar-links{
-    display: none;
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  input{
-    display:none;
+
+  .navbar-logo h1 {
+    font-size: 1.5em; 
   }
- .Search_icon{
-    display: none;
- }
- .Search_icon_show{
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em; 
+  }
+
+  .navbar-links li {
+    margin: 0.5rem 0; 
+  }
+
+  .navbar-icons {
+    margin-top: 10px;
+  }
+
+  input {
+    width: 250px; 
+    margin: 10px 0; 
+  }
+
+  .cart-icon {
+    font-size: 1.5rem; 
+    margin: 10px;
+  }
+
+  .navbar-button {
     display: block;
- }
- .show_Input{
+  }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-logo h1 {
+    font-size: 1.2em; 
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9em; 
+  }
+
+  .navbar-links li {
+    margin: 0.5rem 0; 
+  }
+
+  .navbar-icons {
+    margin-top: 5px;
+  }
+
+  input {
+    width: 200px; 
+    margin: 5px 0; 
+  }
+
+  .cart-icon {
+    font-size: 1.2rem; 
+    margin: 5px;
+  }
+
+  .navbar-button {
+    display: block; 
+  }
+
+  .Search_icon {
+    left: 20px; 
+  }
+
+  .show_Input {
     display: block;
- }
+  }
+
+  .Search_icon_show {
+    display: block;
+  }
 }

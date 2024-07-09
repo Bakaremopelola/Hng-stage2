@@ -1,6 +1,6 @@
 
 import './Header.css';
-import Cart from "../assets/Cart.png" ; // Update with the correct path to your image;
+import Cart from "../assets/Cart.png" ;
 
 
 const Header = () => {

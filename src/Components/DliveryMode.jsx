@@ -1,4 +1,3 @@
-
 const DeliveryMode = ({ selectedMode, onChangeMode }) => {
   return (
     <div className="delivery-mode">
@@ -28,3 +27,4 @@ const DeliveryMode = ({ selectedMode, onChangeMode }) => {
 };
 
 export default DeliveryMode;
+
