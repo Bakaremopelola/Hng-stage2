@@ -1,24 +1,5 @@
 .footerIMg{
     width: 1512px;
     height: 411px;
-top: 3097px;
-}
-/* Media Queries for Responsive Design */
-
-/* For tablets and medium-sized screens */
-@media only screen and (max-width: 768px) {
-    .footerImg {
-    width: 100%; 
-    height: auto;
-    top: auto; 
-    }
-}
-
-  /* For mobile devices */
-@media only screen and (max-width: 480px) {
-    .footerImg {
-    width: 100%; 
-    height: auto; 
-    top: auto; 
-    }
+   top: 3097px;
 }
