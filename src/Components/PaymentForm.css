@@ -38,7 +38,7 @@ height: 38px;
 top: 1334px;
 left: 186px;
 gap: 0px;
-border: 1px 0px 0px 0px;
+/* border: 1px 0px 0px 0px; */
 opacity: 0px;
 
     flex: 1;
@@ -75,7 +75,7 @@ opacity: 0px;
     top: 1430px;
     left: 344px;
     gap: 0px;
-    border: 1px 0px 0px 0px;
+    /* border: 1px 0px 0px 0px; */
     opacity: 0px;
     
   }
@@ -83,12 +83,12 @@ opacity: 0px;
   .fcmb {
     width: 256px;
     height: 45px;
-    top: 1534px;
-    left: 205px;
     gap: 0px;
     border-radius: 10px ;
     opacity: 0px;
-    background-color: darkgreen;
+    color: whitesmoke;
+       margin-left: 2em;
+     background-color: darkgreen;
     
   }
 
