@@ -381,4 +381,8 @@
   .cart-item-price, .cart-item-remove, .cart-item-total-price{
     display: none;
   }
+
+  footer img{
+    display: none;
+  }
 }
