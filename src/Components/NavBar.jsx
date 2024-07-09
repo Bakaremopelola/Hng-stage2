@@ -9,7 +9,7 @@ return (
     <div>
     <nav className="navbar">
         <div className="navbar-logo">
-        <h1>Nature's haven</h1>
+        <h1>Nature &apos;s haven</h1>
         </div>
         <ul className="navbar-links">
         <li><a href="/">Home</a></li>
