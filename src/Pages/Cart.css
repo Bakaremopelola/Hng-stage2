@@ -341,7 +341,7 @@
   }
   .cart-items {
     width: 80vw;
-    /* display: none; */
+    
   }
   .goat {
     width: 95vw;
@@ -358,33 +358,17 @@
   .checkout-button {
     width: 30%;
   }
-
-
-/* .continue-shopping-button{
-  display: none;
-}  */
+  
 
 .certificate{
   display: grid;
   place-items: center;
 
 } 
+ 
 
-  /* .cart-item-remove{
-  display: none;
-}  
 
-.cart-item-price{
-   display: none; 
-} 
-  .cart-item-total-price{
-  display: none;
-}    */
 
-/* .cart-item{
-  margin: 1em 0;
-  display: none;
-} */
 
 
 .cart-item-details{
@@ -393,11 +377,7 @@
   margin: 0;
 
 }
-
- /* .footerImg{
-  display: none;
-
-}  */
+ 
 
 
 /* For mobile devices */
