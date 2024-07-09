@@ -8,6 +8,7 @@ const CartItem = ({ image, title, weight, quantity, price, totalPrice, onQuantit
         <p className="cart-item-title">{title}</p>
         <p className="cart-item-weight">{weight}</p>
         <div className="cart-item-remove" onClick={onRemove}><RiDeleteBin5Fill /></div>
+        <p className="cart-item-total-price2">N {totalPrice}</p>
       </div>
 
 

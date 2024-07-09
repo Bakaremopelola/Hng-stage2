@@ -15,7 +15,7 @@ const Category = () => {
         </div>
 
         <div className="categoryItem2">
-          <img src={Cabbage} alt="" draggable="false"/>
+          <img src={Cabbage} alt="" draggable="false" className='categoryImg'/>
           <p className="categoryInfo">vegetables</p>
         </div>
 

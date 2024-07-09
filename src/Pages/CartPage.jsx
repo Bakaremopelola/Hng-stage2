@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import CartItem from '../Components/CartItem';
-import DeliveryMode from '../Components/DeliveryMode';
+import DeliveryMode from '../Components/DliveryMode';
 import PaymentForm from '../Components/PaymentForm';
 import Footer from '../Components/Footer.jsx';
 
@@ -95,7 +95,7 @@ const CartPage = () => {
               <p className='sam'>SUBTOTAL: <p >N {subtotal}</p></p>
               <p className='sam'>SHIPPING: <p >N {shipping}</p></p>
               <p className='sam'>TOTAL: <p >N {total}</p></p>
-              {/* <button className="checkout-button">Checkout</button> */}
+               <button className="checkout-button">Checkout</button> 
             </div>
           </div>
         </div>

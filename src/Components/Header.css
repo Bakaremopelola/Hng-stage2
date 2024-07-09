@@ -33,7 +33,9 @@
     text-transform: capitalize;
     
   }
-
+  .hamburger-menu {
+    display: none; /* Hide initially on larger screens */
+  }
   /* Media Queries for Responsive Design */
 
 /* For tablets and medium-sized screens */
@@ -66,10 +68,27 @@
 /* For mobile devices */
 @media only screen and (max-width: 480px) {
   .head {
-    padding: 10px;
-    flex-direction: column;
-    width: 100%; 
+    padding: 10px;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
     height: auto; 
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+  }
+  h1{
+    font-size: 1.2em;
+  }
+  .text p{
+    font-size: 1em;
+  }
+  .Cart-img{
+    width: 40vw;
   }
 
   .text h1 {
@@ -88,6 +107,7 @@
     width: 120px; 
     font-size: 18px; 
   }
+ 
 }
 
 

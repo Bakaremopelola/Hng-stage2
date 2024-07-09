@@ -1,103 +1,104 @@
-
-
 .navbar {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: whitesmoke;
-    color: black;
-    width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  color: black;
+  width: 100vw;
+  
+}
+.school{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-logo h1 {
-    margin: 0;
-     font-weight:600px;
-    text-transform: capitalize;
-    font-size: 15px;
-    color: green;
+  margin: 0;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 15px;
+  color: green;
 }
 
 .navbar-links {
-    list-style: none;
-    display: flex;
-   font-weight: 600;
-   font-size: 1.25em;
+  list-style: none;
+  display: flex;
+  font-weight: 600;
+  font-size: 1.25em;
 }
 
 .navbar-links li {
-    margin: 0 1rem;
-   
+  margin: 0 1rem;
 }
 
 .navbar-links a {
-    color: black;
-    text-decoration: none;
-    transition: color 0.3s;
-    text-transform: uppercase;
-    font-weight: bolder;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
-.Search_icon{
+.Search_icon {
   position: relative;
   left: 50px;
   color: grey;
 }
 
 .navbar-icons {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-input{
-    box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.153);
-    background-color: transparent;
-    border: none;
-    margin: 20px;
-    width: 336px;
-    padding:10px;
-    height: 38px;
-    border-radius: 10px;
-}
-.cart-icon{
-    font-size: 2rem;
-    transform: rotateY(180deg);
-    margin: 20px;
-}
-.navbar-button{
-    color: black;
-    font-size: 2rem;
-    display: none;
-}
-.show_Input{
-    display: none;
-}
-.Search_icon_show{
-    display: none;
+input {
+  box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.153);
+  background-color: transparent;
+  border: none;
+  margin: 20px;
+  width: 336px;
+  padding: 10px;
+  height: 38px;
+  border-radius: 10px;
 }
 
+.cart-icon {
+  font-size: 2rem;
+  transform: rotateY(180deg);
+  margin: 20px;
+}
+
+.navbar-button {
+  color: black;
+  font-size: 2rem;
+  display: none;
+}
+
+.show_Input {
+  display: none;
+}
+
+.Search_icon_show {
+  display: none;
+}
 
 /* Media Queries for Responsive Design */
 
 /* For tablets and medium-sized screens */
 @media only screen and (max-width: 768px) {
   .navbar {
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   .navbar-logo h1 {
-    font-size: 1.5em; 
+    font-size: 1.5em;
   }
 
-  .navbar-links {
-    flex-direction: column;
-    align-items: center;
-    font-size: 1em; 
-  }
 
   .navbar-links li {
-    margin: 0.5rem 0; 
+    margin: 0.5rem 0;
   }
 
   .navbar-icons {
@@ -105,69 +106,133 @@ input{
   }
 
   input {
-    width: 250px; 
-    margin: 10px 0; 
+    width: 250px;
+    margin: 10px 0;
   }
 
   .cart-icon {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     margin: 10px;
   }
 
   .navbar-button {
     display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
+
+  .menu {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: #fff;
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .menu li {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .show_Input {
+    display: block;
+    width: 200px;
+    margin: 5px 0;
+  }
+
 }
 
 /* For mobile devices */
 @media only screen and (max-width: 480px) {
-  .navbar {
-    flex-direction: column;
-    justify-content: center;
+  .school{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
     align-items: center;
+    height: 10vh;
+  }
+  .navbar {
+    display: flex;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    height: 10vh;
   }
 
   .navbar-logo h1 {
-    font-size: 1.2em; 
+    font-size: 1.2em;
   }
 
   .navbar-links {
     flex-direction: column;
     align-items: center;
-    font-size: 0.9em; 
+    font-size: 0.9em;
   }
-
+.navbar-links, .navbar-icons{
+  display: none;
+}
   .navbar-links li {
-    margin: 0.5rem 0; 
+    margin: 0.5rem 0;
   }
 
-  .navbar-icons {
-    margin-top: 5px;
-  }
+  
 
   input {
-    width: 200px; 
-    margin: 5px 0; 
-  }
-
-  .cart-icon {
-    font-size: 1.2rem; 
-    margin: 5px;
+    width: 200px;
+    margin: 5px 0;
   }
 
   .navbar-button {
-    display: block; 
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
 
-  .Search_icon {
-    left: 20px; 
+  .menu {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .menu li {
+    padding: 10px;
+    cursor: pointer;
   }
 
   .show_Input {
     display: block;
+    width: 200px;
+    margin: 5px 0;
   }
 
-  .Search_icon_show {
-    display: block;
-  }
 }
