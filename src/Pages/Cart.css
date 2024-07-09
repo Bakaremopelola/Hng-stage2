@@ -339,9 +339,15 @@
     display: none;
   }
   .cart-header {
-    width: 90vw;
+    /* width: 90vw;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
+    display: none;
+  }
+
+  .certificate{
+    display: grid;
+    place-items: center;
   }
   .cart-page {
     width: 100vh;
