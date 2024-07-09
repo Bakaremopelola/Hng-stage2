@@ -334,8 +334,9 @@
 /* For mobile devices */
 @media only screen and (max-width: 480px) {
   .Cart {
-    flex-direction: column;
-    width: 100vw;
+    /* flex-direction: column;
+    width: 100vw; */
+    display: none;
   }
   .cart-header {
     width: 90vw;
