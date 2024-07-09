@@ -4,7 +4,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="Footer">
       <img src={hng16} alt="footer" className="footerImg" />
     </footer>
   );
