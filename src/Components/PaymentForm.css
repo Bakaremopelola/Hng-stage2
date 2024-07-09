@@ -1,0 +1,110 @@
+.payment-form {
+  background-color: #f8f8f8;
+    width: 70vw;
+    height: 50vh;
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin-bottom: 10em;
+  }
+  
+  .payment-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .card-number,
+  .expiration-cvc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .card-number input {
+width: 310px;
+height: 38px;
+top: 1334px;
+left: 186px;
+gap: 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+  
+  .card-number img {
+width: 27px;
+height: 21px;
+top: 1343px;
+left: 451px;
+gap: 0px;
+opacity: 0px;
+
+  }
+  
+  .expiration-cvc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .expiration-cvc div {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+  }
+  
+  .expiration-cvc input {
+    width: 97px;
+    height: 38px;
+    top: 1430px;
+    left: 344px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    
+  }
+  
+  .fcmb {
+    width: 256px;
+    height: 45px;
+    top: 1534px;
+    left: 205px;
+    gap: 0px;
+    border-radius: 10px ;
+    opacity: 0px;
+    background-color: darkgreen;
+    
+  }
+
+
+  .mastercard{
+    transform: translateX(-4em);
+  }
+  /* #expiration{
+width: 44px;
+height: 15px;
+top: 1442px;
+left: 213px;
+gap: 0px;
+opacity: 0px;
+
+
+  } */
+  
+   

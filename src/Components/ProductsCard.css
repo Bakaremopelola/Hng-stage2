@@ -1,0 +1,77 @@
+/* src/Components/Product.css */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Create 5 columns */
+  gap: 15px; /* Add some space between the grid items */
+}
+
+.product-card {
+  border: 1px solid #ccc; /* Add border for visual separation */
+  width:  235px;
+  height: 314px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: -2px 5px 2px rgba(0, 0, 0, 0.186);
+  border-radius: 20px;
+}
+
+
+.product-card img {
+ width: 235px;
+ height: 232px;
+ object-fit: fill;
+ border-radius: 20px;
+
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.add-to-cart-button {
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.heart{
+ height: 1.2em;
+ width: 1.2em;
+ color: #f79E1B;
+}
+.heartCont{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  height: 2em;
+  padding: 0 1em;
+}
+.title{
+
+}  
+.add-to-cart-btn{
+  background-color: #f79E1B;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  height: 2em;
+}
+@media only screen  and (max-width: 768px) {
+  .products-grid {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   align-items: center;
+  }
+}

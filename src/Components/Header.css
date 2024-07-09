@@ -1,0 +1,59 @@
+.head {background: #FFEBD4;
+    background-color: #FFEBD4;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 94.5em;
+    height: 41.625em;
+  }
+  
+  .text h1 {
+    margin-right: 200px;
+    font-size: 4em;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  .text p {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  
+.HeaderBtn {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    height: 80px;
+    width: 189px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    
+  }
+  @media only screen and (max-width: 768px) {
+    .head {background: #FFEBD4;
+      background-color: #FFEBD4;
+      padding: 20px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    .text h1 {
+      margin-right: 0px;
+      font-size: 3rem;
+      text-transform: capitalize;
+      text-align: center;
+    }
+    .Cart-img{
+      transform: translate(-20px);
+      width: 100%;
+    }
+
+  }
+  
+ 
