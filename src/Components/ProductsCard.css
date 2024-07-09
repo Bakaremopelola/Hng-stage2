@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* Create 5 columns */
   gap: 15px; /* Add some space between the grid items */
+  margin-bottom: 10em;
 }
 
 .product-card {
