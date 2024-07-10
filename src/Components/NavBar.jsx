@@ -39,7 +39,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="menu">
-            <ul>
+            <ul>  
               <li><a href="/">Home</a></li>
               <li><a href="/">About Us</a></li>
               <li><a href="/">Blog</a></li>
