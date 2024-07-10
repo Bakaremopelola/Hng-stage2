@@ -106,7 +106,9 @@ const CartPage = () => {
         <PaymentForm className="payment-form"/>
       </div>
 
+      <div className="footer">
       <Footer className="CartFooter"/>
+      </div>
     </div>
   );
 };

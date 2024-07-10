@@ -10,7 +10,7 @@ const Header = () => {
         <div className="text">
           <h1>fresh and healthy</h1>
           <h1> vegetables and fruits</h1>
-          <p>They are produced by methods that <br /> comply with the standards of farming</p>
+          <p className='text-p'>They are produced by methods that <br /> comply with the standards of farming</p>
           <button className='HeaderBtn'>shop now</button>
         </div>
         <div className="cart">

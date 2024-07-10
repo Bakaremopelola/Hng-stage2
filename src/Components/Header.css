@@ -91,9 +91,10 @@
     font-size: 1.2em;
     font-family: inter;
   }
-  .text p{
-    font-size: 1em;
-    font-family: inter;
+
+
+  .text>p{
+    text-align: left;
   }
   .Cart-img{
     width: 40vw;
@@ -102,15 +103,10 @@
   .text h1 {
     margin-right: 0; 
     font-size: 2.5em; 
-    text-align: center; 
     font-family: inter;
   }
 
-  .text p {
-    font-size: 18px; 
-    text-align: center;
-    font-family: inter; 
-  }
+
 
   .HeaderBtn {
     height: 50px; 

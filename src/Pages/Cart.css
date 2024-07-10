@@ -273,6 +273,10 @@
   border-radius: 5px;
 }
 
+.footer{
+  width: 100%;
+}
+
 /* Media Queries for Responsive Design */
 
 /* For tablets and medium-sized screens */
@@ -396,8 +400,8 @@
     display: none;
   }
 
-
-  .CartFooter{
+  .footer{
     display: none;
   }
+
 }
