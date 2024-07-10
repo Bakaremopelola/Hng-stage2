@@ -1,10 +1,18 @@
 
 import './PaymentForm.css';
 
-function PaymentForm() {
+function PaymentForm({ onSubmit }) {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("Payment form submitted");
+    if (onSubmit) {
+      onSubmit();
+    }
+  };
+
   return (
     <div className="payment-form">
-      <form>
+      <form onSubmit={handleSubmit}>
         <label htmlFor="card-number">Card number</label>
         <div className="card-number">
           <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX" maxLength="19" />
@@ -20,11 +28,10 @@ function PaymentForm() {
             <input type="text" id="cvc" placeholder="CVC" maxLength="4" />
           </div>
         </div>
-        <button  className='fcmb'  type="submit">Confirm Payment</button>
+        <button className='fcmb' type="submit">Confirm Payment</button>
       </form>
     </div>
   );
 }
 
 export default PaymentForm;
-
