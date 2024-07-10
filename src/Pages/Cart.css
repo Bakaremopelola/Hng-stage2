@@ -103,6 +103,7 @@
 .cart-item-title {
   font-weight: bold;
   margin: 0;
+  font-family: inter;
 }
 
 .cart-item-weight {
@@ -339,7 +340,7 @@
     display: none;
   }
   .cart-header {
-   
+
     display: none;
   }
 

@@ -50,7 +50,8 @@
 @media only screen and (max-width: 480px) {
   .card {
     width: 150px; 
-    margin: 10px auto; 
+    margin: 10px auto;
+    font-family: inter; 
   }
 
   .card-img {
@@ -64,5 +65,6 @@
 
   .card-content h3 {
     font-size: 1.1em;
+    font-family: inter;
   }
 }

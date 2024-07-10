@@ -20,6 +20,7 @@
   text-transform: capitalize;
   font-size: 15px;
   color: green;
+  font-family: inter;
 }
 
 .navbar-links {
@@ -27,6 +28,7 @@
   display: flex;
   font-weight: 600;
   font-size: 1.25em;
+  font-family: inter;
 }
 
 .navbar-links li {
@@ -39,6 +41,7 @@
   transition: color 0.3s;
   text-transform: uppercase;
   font-weight: bolder;
+  font-family: inter;
 }
 
 .Search_icon {
@@ -67,12 +70,14 @@ input {
   font-size: 2rem;
   transform: rotateY(180deg);
   margin: 20px;
+  font-family: inter;
 }
 
 .navbar-button {
   color: black;
   font-size: 2rem;
   display: none;
+  font-family: inter;
 }
 
 .show_Input {
@@ -94,6 +99,7 @@ input {
 
   .navbar-logo h1 {
     font-size: 1.5em;
+    font-family: inter;
   }
 
 
@@ -113,6 +119,7 @@ input {
   .cart-icon {
     font-size: 1.5rem;
     margin: 10px;
+    font-family: inter;
   }
 
   .navbar-button {
@@ -173,12 +180,14 @@ input {
 
   .navbar-logo h1 {
     font-size: 1.2em;
+    font-family: inter;
   }
 
   .navbar-links {
     flex-direction: column;
     align-items: center;
     font-size: 0.9em;
+    font-family: inter;
   }
 .navbar-links, .navbar-icons{
   display: none;

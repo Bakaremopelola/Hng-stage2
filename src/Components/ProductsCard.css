@@ -1,13 +1,13 @@
-/* src/Components/Product.css */
+
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Create 5 columns */
-  gap: 15px; /* Add some space between the grid items */
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 15px; 
   margin-bottom: 10em;
 }
 
 .product-card {
-  border: 1px solid #ccc; /* Add border for visual separation */
+  border: 1px solid #ccc; 
   width:  235px;
   height: 314px;
   text-align: center;
@@ -120,9 +120,11 @@
   }
   .product-card p{
     font-size: 0.5em;
+    font-family: inter;
   }
   .add-to-cart-btn{
     font-size: 0.4em;
     height: 3em;
+    font-family: inter;
   }
 }

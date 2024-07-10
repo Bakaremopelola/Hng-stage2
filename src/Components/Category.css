@@ -3,6 +3,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   font-family: inter;
 }
   .categoryItem1{
     text-align: center;
@@ -47,6 +48,7 @@
   }
   .categoryInfo{
     text-transform: capitalize;
+    font-family: inter;
     font-size: 20px;
     font-weight: bolder;
   }
@@ -66,6 +68,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
+    font-family: inter;
   }
 
   .categoryItem1,
@@ -89,6 +92,7 @@
   .categoryInfo,
   .categoryInfo_two {
     font-size: 1.2em; 
+    font-family: inter;
   }
 }
 
@@ -118,5 +122,6 @@
   .categoryInfo,
   .categoryInfo_two {
     font-size: 1em; 
+    font-family: inter;
   }
 }

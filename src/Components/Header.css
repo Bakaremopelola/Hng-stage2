@@ -14,11 +14,13 @@
     padding: 0;
     margin: 0;
     text-transform: capitalize;
+    font-family: inter;
   }
 
   .text p {
     font-size: 24px;
     font-weight: 300;
+    font-family: inter;
   }
   
 .HeaderBtn {
@@ -31,6 +33,7 @@
     font-size: 24px;
     border-radius: 10px;
     text-transform: capitalize;
+    font-family: inter;
     
   }
   .hamburger-menu {
@@ -83,9 +86,11 @@
   }
   h1{
     font-size: 1.2em;
+    font-family: inter;
   }
   .text p{
     font-size: 1em;
+    font-family: inter;
   }
   .Cart-img{
     width: 40vw;
@@ -95,17 +100,20 @@
     margin-right: 0; 
     font-size: 2.5em; 
     text-align: center; 
+    font-family: inter;
   }
 
   .text p {
     font-size: 18px; 
-    text-align: center; 
+    text-align: center;
+    font-family: inter; 
   }
 
   .HeaderBtn {
     height: 50px; 
     width: 120px; 
     font-size: 18px; 
+    font-family: inter;
   }
  
 }
