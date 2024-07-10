@@ -363,7 +363,12 @@
     width: 40vw;
   }
   .checkout-button {
-    width: 50%;
+  width: 22vw;
+  height: 3em;
+  border: white solid 10px;
+  color: white;
+  background: darkgreen;
+
   }
 
   .cart-summary{
@@ -374,7 +379,7 @@
   .continue-shopping-button{
     display: none;
   }
-  
+
   .cart-item{
     width: 90vw;
     display: flex;
@@ -388,6 +393,11 @@
 
 
   .payment-form{
+    display: none;
+  }
+
+
+  .CartFooter{
     display: none;
   }
 }

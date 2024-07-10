@@ -72,7 +72,7 @@ const CartPage = () => {
             <h4>Price</h4>
             <h4>Total</h4>
           </div>
-          
+
           <div className="cart-items">
             {cartItems.map((item, index) => (
               <CartItem
@@ -95,7 +95,10 @@ const CartPage = () => {
               <p className='sam'>SUBTOTAL: <p >N {subtotal}</p></p>
               <p className='sam'>SHIPPING: <p >N {shipping}</p></p>
               <p className='sam'>TOTAL: <p >N {total}</p></p>
-              <button className="checkout-button">Checkout</button> 
+              <NavLink to="/PaymentForm">
+              <button className="checkout-button">Checkout</button>
+          </NavLink>
+        
             </div>
           </div>
         </div>
@@ -103,7 +106,7 @@ const CartPage = () => {
         <PaymentForm className="payment-form"/>
       </div>
 
-      <Footer/>
+      <Footer className="CartFooter"/>
     </div>
   );
 };
