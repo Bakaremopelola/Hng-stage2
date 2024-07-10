@@ -352,6 +352,7 @@
   }
   .goat {
     width: 100vw;
+  
   }
   .payment {
     width: 80vw;
@@ -369,6 +370,11 @@
     width: 90vw;
   }
 
+
+  .continue-shopping-button{
+    display: none;
+  }
+  
   .cart-item{
     width: 90vw;
     display: flex;

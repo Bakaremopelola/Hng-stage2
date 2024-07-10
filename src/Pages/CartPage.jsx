@@ -72,7 +72,7 @@ const CartPage = () => {
             <h4>Price</h4>
             <h4>Total</h4>
           </div>
-
+          
           <div className="cart-items">
             {cartItems.map((item, index) => (
               <CartItem
