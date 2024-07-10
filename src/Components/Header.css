@@ -54,17 +54,20 @@
     margin-right: 0; 
     font-size: 3em; 
     text-align: center; 
+    font-family: inter;
   }
 
   .text p {
     font-size: 20px; 
     text-align: center; 
+    font-family: inter;
   }
 
   .HeaderBtn {
     height: 60px; 
     width: 150px; 
     font-size: 20px; 
+    font-family: inter;
   }
 }
 
