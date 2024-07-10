@@ -52,8 +52,7 @@
 
   .text h1 {
     margin-right: 0; 
-    font-size: 3em; 
-    text-align: center; 
+    font-size: 3em;  
     font-family: inter;
   }
 
@@ -86,6 +85,7 @@
     justify-content: center;
     align-items: center;
     width: 50vw;
+    place-items: left;
   }
   h1{
     font-size: 1.2em;
@@ -118,7 +118,7 @@
     font-size: 18px; 
     font-family: inter;
   }
- 
+
 }
 
 
