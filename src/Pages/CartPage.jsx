@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import CartItem from '../Components/CartItem';
 import DeliveryMode from '../Components/DliveryMode';
-import PaymentForm from '../Components/PaymentForm';
+ import PaymentForm from '../Components/PaymentForm';
 import Footer from '../Components/Footer.jsx';
 
 import Date from '../assets/Date.png';
@@ -103,7 +103,7 @@ const CartPage = () => {
           </div>
         </div>
 
-        <PaymentForm className="payment-form"/>
+        <div className='PF'><PaymentForm className="payment-form"/> </div>
       </div>
 
       <div className="footer">

@@ -189,8 +189,12 @@ input {
     font-size: 0.9em;
     font-family: inter;
   }
-.navbar-links, .navbar-icons{
+.navbar-links {
   display: none;
+}
+
+.navbar-icons{
+  display: block;
 }
   .navbar-links li {
     margin: 0.5rem 0;

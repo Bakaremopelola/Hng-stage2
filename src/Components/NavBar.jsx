@@ -31,7 +31,7 @@ const Navbar = () => {
           <NavLink to="/CartPage">
             <MdOutlineShoppingCart className="cart-icon" />
           </NavLink>
-          <button className="navbar-button" onClick={toggleMenu}>
+          <button className="navbar-button  " onClick={toggleMenu}>
             <FaBars />
           </button>
         </nav>
