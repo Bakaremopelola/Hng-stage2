@@ -5,7 +5,7 @@ import { FaArrowLeft } from "react-icons/fa6";
 const Checkout = () => {
  
   return (
-    <div className="payment-form">
+    <div className="payment-form1">
          <div className="strike">
          <Link to='/cartPage'><FaArrowLeft /></Link>
             <h1 className='PD'>Payment Details</h1>
