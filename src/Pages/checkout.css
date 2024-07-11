@@ -1,18 +1,17 @@
-.main1{
-    display: none;
-}
+
+
 
 
 
 
 .payment-form {
+    display: none;
   background-color: #f8f8f8;
   width: 70vw;
   height: 50vh;
   gap: 0px;
   opacity: 0px;
   border-radius: 1em;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
