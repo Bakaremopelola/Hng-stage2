@@ -149,7 +149,7 @@ label {
 
 /* For mobile devices */
 @media only screen and (max-width: 480px) {
-  .payment-form {
+  .payment-form1 {
     width: 95vw;
     height: 70vh;
     display: flex;
