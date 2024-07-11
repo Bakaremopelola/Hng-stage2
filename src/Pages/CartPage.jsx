@@ -68,7 +68,7 @@ const CartPage = () => {
   };
 
   return (
-    <div className='main'>
+    <div className='main1'>
       <div className="cart-page">
         <div className='Cart'>
         <div className="strike1">
