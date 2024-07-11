@@ -13,6 +13,7 @@ const Navbar = () => {
     };
   
     return (
+      <div className='menu-main'>
       <div className='school'>
         <nav className="navbar">
           <div className="navbar-logo">
@@ -38,6 +39,7 @@ const Navbar = () => {
   
         {/* Mobile Menu */}
         {isMenuOpen && (
+          
           <div className="menu">
             <ul>  
               <li><a href="/">Home</a></li>
@@ -45,18 +47,24 @@ const Navbar = () => {
               <li><a href="/">Blog</a></li>
               <li><a href="/">Contact</a></li>
             </ul>
-            <div className="navbar-icons">
+            {/* <div className="navbar-icons">
             <FaSearch className="Search_icon" />
             <input type="text" value="" />
-          </div>
+          </div> */}
           <NavLink to="/CartPage">
             <MdOutlineShoppingCart className="cart-icon" />
           </NavLink>
-          <FaSearch />
-          <input type="text" value="" />
-        </div>
-          
+          {/* <FaSearch /> */}
+          </div>
+         
+        
+          //  <input type="text" value="" />
         )}
+  </div>
+   <div className="navbar-icons1">
+            <FaSearch className="Search_icon" />
+            <input type="text" value="" />
+          </div>
   </div>
           
     );

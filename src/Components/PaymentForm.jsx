@@ -6,6 +6,7 @@ function PaymentForm() {
   
   return (
     <div className="payment-form">
+     
       <form >
         <label htmlFor="card-number">Card number</label>
         <div className="card-number">

@@ -50,9 +50,12 @@
   color: grey;
 }
 
-.navbar-icons {
+.navbar-icons, .navbar-icons1 {
   display: flex;
   align-items: center;
+}
+.navbar-icons1{
+  display: none;
 }
 
 input {
@@ -198,18 +201,23 @@ input {
 .navbar-links {
   display: none;
 }
-
 .navbar-icons{
-  display: block;
+  display: none;
+}
+.navbar-icons1{
+  display: flex;
 }
   .navbar-links li {
     margin: 0.5rem 0;
   }
 
-  
+  .menu-main{
+    display: flex;
+    flex-direction: column;
+  }
 
   input {
-    width: 200px;
+    width: 80vw;
     margin: 5px 0;
   }
 
@@ -222,7 +230,13 @@ input {
     border: none;
     cursor: pointer;
   }
-
+.menu-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
   .menu {
     position: absolute;
     top: 80px;
