@@ -1,9 +1,8 @@
 
-import { Link } from 'react-router-dom';
-import './PaymentForm.css';
+import './checkout.css';
 
-function PaymentForm() {
-  
+const Checkout = () => {
+ 
   return (
     <div className="payment-form">
       <form >
@@ -22,10 +21,10 @@ function PaymentForm() {
             <input type="text" id="cvc" placeholder="CVC" maxLength="4" />
           </div>
         </div>
-        <Link to="/checkout"><button className='fcmb' type="submit">Confirm Payment</button></Link>
+        <button className='fcmb' type="submit">Confirm Payment</button>
       </form>
     </div>
   );
 }
 
-export default PaymentForm;
+export default Checkout;

@@ -1,11 +1,12 @@
+import { Link } from 'react-router-dom';
 
-    import React from 'react';
 
-    function CheckoutButton({ onClick }) {
-    return (
-        <button onClick={onClick} className='checkout-button'>Checkout</button>
+function CheckoutButton() {
+return (
+    <Link to="/checkout"><button className="checkout-button">Checkout</button></Link>
 );
-    }
-    
-    export default CheckoutButton;
+}
+
+export default CheckoutButton;
+
     

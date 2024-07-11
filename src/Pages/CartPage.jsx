@@ -1,10 +1,10 @@
 import  { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import CartItem from '../Components/CartItem';
-import DeliveryMode from '../Components/DeliveryMode';
+import DeliveryMode from '../Components/DliveryMode';
 import PaymentForm from '../Components/PaymentForm';
-import Footer from '../Components/Footer';
-import CheckoutButton from '../Components/CheckoutButton';
+import CheckoutButton from '../Components/Checkout';
+import Footer from '../Components/Footer.jsx';
 
 import Date from '../assets/Date.png';
 import HNG3 from '../assets/HNG3.jpg';
@@ -53,6 +53,10 @@ const CartPage = () => {
     setCartItems(newCartItems);
   };
 
+  const subtotal = cartItems.reduce((total, item) => total + item.quantity * item.price, 0);
+  const shipping = deliveryMode === 'home' ? 450 : 0;
+  const total = subtotal + shipping;
+
   const handleCheckoutClick = () => {
     console.log("Checkout button clicked");
     setShowPaymentForm(true);
@@ -63,22 +67,18 @@ const CartPage = () => {
     // Handle the payment logic here
   };
 
-  const subtotal = cartItems.reduce((total, item) => total + item.quantity * item.price, 0);
-  const shipping = deliveryMode === 'home' ? 450 : 0;
-  const total = subtotal + shipping;
-
   return (
-    <div className="main">
+    <div className='main'>
       <div className="cart-page">
-        <div className="Cart">
-          <h1 className="certificate">My Cart</h1>
+        <div className='Cart'>
+          <h1 className='certificate'>My Cart</h1>
           <NavLink to="/" className="continue-shopping-link">
             <button className="continue-shopping-button">← Continue shopping</button>
           </NavLink>
         </div>
 
-        <div className="goat">
-          <div className="cart-header">
+        <div className='goat'>
+          <div className='cart-header'>
             <h4>Product Details</h4>
             <h4>Quantity</h4>
             <h4>Price</h4>
@@ -101,27 +101,30 @@ const CartPage = () => {
             ))}
           </div>
 
-          <div className="payment">
+          <div className='payment'>
             <DeliveryMode selectedMode={deliveryMode} onChangeMode={setDeliveryMode} />
             <div className="cart-summary">
-              <p className="sam">SUBTOTAL: <span>N {subtotal}</span></p>
-              <p className="sam">SHIPPING: <span>N {shipping}</span></p>
-              <p className="sam">TOTAL: <span>N {total}</span></p>
-              {showPaymentForm ? (
-                <PaymentForm onSubmit={handlePaymentSubmit} />
-              ) : (
-                <CheckoutButton onClick={handleCheckoutClick} />
-              )}
+              <p className='sam'>SUBTOTAL: <p >N {subtotal}</p></p>
+              <p className='sam'>SHIPPING: <p >N {shipping}</p></p>
+              <p className='sam'>TOTAL: <p >N {total}</p></p>
+
+              <CheckoutButton onClick={handleCheckoutClick} />
+
+              <div className="App">
+                {showPaymentForm && <PaymentForm onSubmit={handlePaymentSubmit} />}
+              </div>
             </div>
           </div>
         </div>
+
+        <div className='PF'><PaymentForm className="payment-form"/> </div>
       </div>
-      <Footer className="CartFooter" />
+
+      <div className="footer">
+        <Footer className="CartFooter"/>
+      </div>
     </div>
   );
 };
 
 export default CartPage;
-
-
-

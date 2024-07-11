@@ -394,7 +394,9 @@
     display: none;
   }
 
-
+.PF{
+  display: none;
+}
 
   .payment-form{
     display: none;

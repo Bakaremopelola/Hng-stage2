@@ -169,6 +169,12 @@ input {
     align-items: center;
     height: 10vh;
   }
+  .head{
+    margin-top: 20px;
+
+  }  
+
+
   .navbar {
     display: flex;
     background: white;

@@ -1,0 +1,23 @@
+/* Checkout.css */
+
+.checkout-button {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+@media (max-width: 600px) {
+    .checkout-button {
+    font-size: 14px; 
+    padding: 8px 16px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    }
+}
