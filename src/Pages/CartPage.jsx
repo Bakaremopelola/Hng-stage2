@@ -1,11 +1,11 @@
 import  { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import CartItem from '../Components/CartItem';
 import DeliveryMode from '../Components/DliveryMode';
 import PaymentForm from '../Components/PaymentForm';
 import CheckoutButton from '../Components/Checkout';
 import Footer from '../Components/Footer.jsx';
-
+import {FaArrowLeft} from 'react-icons/fa6';
 import Date from '../assets/Date.png';
 import HNG3 from '../assets/HNG3.jpg';
 import HNG2 from '../assets/HNG2.jpg';
@@ -71,7 +71,12 @@ const CartPage = () => {
     <div className='main'>
       <div className="cart-page">
         <div className='Cart'>
-          <h1 className='certificate'>My Cart</h1>
+        <div className="strike1">
+         <Link to='/' className='had'><FaArrowLeft /></Link>
+         <h1 className='certificate'>My Cart</h1>
+            <h1 className='had1'></h1>
+            </div>
+          
           <NavLink to="/" className="continue-shopping-link">
             <button className="continue-shopping-button">← Continue shopping</button>
           </NavLink>

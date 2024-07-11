@@ -9,7 +9,9 @@
   margin: 0;
   padding: 0;
 }
-
+.had, .had1{
+  display: none;
+}
 .certificate {
   gap: 0px;
   opacity: 0px;
@@ -405,6 +407,14 @@
   .footer{
     display: none;
   } 
-
+  .strike1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+  }
+  .had{
+    display: flex;
+  }
 
 }

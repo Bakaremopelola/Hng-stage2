@@ -14,6 +14,9 @@
   padding-bottom: 3em;
   margin-bottom: 10em;
 }
+.strike{
+    display: none;
+}
 
 .payment-form form {
   display: flex;
@@ -161,9 +164,13 @@ label {
     font-family: inter;
     font-weight: 600px;
     font-size: 20px;
+  }
 
-
-
+  .strike{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
   }
 
   .card-number input {

@@ -1,11 +1,16 @@
-
+import { Link } from 'react-router-dom';
 import './checkout.css';
+import { FaArrowLeft } from "react-icons/fa6";
 
 const Checkout = () => {
  
   return (
     <div className="payment-form">
-         <h1 className='PD'>Payment Details</h1>
+         <div className="strike">
+         <Link to='/cartPage'><FaArrowLeft /></Link>
+            <h1 className='PD'>Payment Details</h1>
+            <h1></h1>
+            </div>
       <form >
         <label htmlFor="card-number" className='CN'>Card number</label>
         <div className="card-number">
