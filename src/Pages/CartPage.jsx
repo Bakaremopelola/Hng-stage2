@@ -84,10 +84,9 @@ const CartPage = () => {
           </div>
         </div>
 
-        <div className="footer">
-        <Footer className="CartFooter"/>
+     
       </div>
-      </div>
+      <Footer/>
     </div>
   );
 };
