@@ -93,16 +93,16 @@ const Product = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const params = new URLSearchParams({
-          organization_id: '08795f9d14134eab91870836779a7bad',
-          reverse_sort: false,
-          page: currentPage + 1, // Page number (1-indexed)
-          size: productsPerPage,
-          Appid: 'XOJ071P81OPLFDZ',
-          Apikey: 'e01db212643a4df8adcec84fc49ac69920240713090305722296'
-        });
+        // const params = new URLSearchParams({
+        //   organization_id: '08795f9d14134eab91870836779a7bad',
+        //   reverse_sort: false,
+        //   page: currentPage + 1, // Page number (1-indexed)
+        //   size: productsPerPage,
+        //   Appid: 'XOJ071P81OPLFDZ',
+        //   Apikey: 'e01db212643a4df8adcec84fc49ac69920240713090305722296'
+        // });
 
-        const response = await fetch(`/api/products?${params}`, {
+        const response = await fetch("https://app.timbu.cloud/products", {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -117,7 +117,11 @@ const Product = () => {
         console.log('API response:', data);
 
         setProducts(data.items || []);
-        setPageCount(Math.ceil(data.total / productsPerPage)); // Assuming the total number of products is provided in the response
+        setPageCount(Math.ceil(data.total / productsPerPage)); 
+        
+        console.log(response);
+        
+      
       } catch (error) {
         console.error('Error fetching products:', error);
       }
@@ -134,6 +138,7 @@ const Product = () => {
     addToCart(product);
     navigate('/cart'); // Navigate to the cart page
   };
+
 
   return (
     <>
