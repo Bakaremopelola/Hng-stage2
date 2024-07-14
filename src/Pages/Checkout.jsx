@@ -1,17 +1,30 @@
+import  { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './checkout.css';
 import { FaArrowLeft } from "react-icons/fa6";
+import DoneModal from '../Components/DoneModal';
 
 const Checkout = () => {
- 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Simulate payment process
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="payment-form1">
-         <div className="strike">
-         <Link to='/cartPage'><FaArrowLeft /></Link>
-            <h1 className='PD'>Payment Details</h1>
-            <h1></h1>
-            </div>
-      <form >
+      <div className="strike">
+        <Link to='/cartPage'><FaArrowLeft /></Link>
+        <h1 className='PD'>Payment Details</h1>
+        <h1></h1>
+      </div>
+      <form onSubmit={handleSubmit}>
         <label htmlFor="card-number" className='CN'>Card number</label>
         <div className="card-number">
           <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX" maxLength="19" />
@@ -29,8 +42,9 @@ const Checkout = () => {
         </div>
         <button className='fcmb' type="submit">Confirm Payment</button>
       </form>
+      <DoneModal isOpen={isModalOpen} onRequestClose={handleCloseModal} />
     </div>
   );
-}
+};
 
 export default Checkout;
