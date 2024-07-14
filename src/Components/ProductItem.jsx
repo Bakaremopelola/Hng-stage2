@@ -1,7 +1,7 @@
 
 
 import { FaRegHeart } from 'react-icons/fa';
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'; 
 
 const ProductCard = ({ image, title, icon, price, buttonText }) => {
   return (

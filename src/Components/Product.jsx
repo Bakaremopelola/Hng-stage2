@@ -38,7 +38,12 @@ const Product = () => {
         {Array.isArray(products) && products.length > 0 ? (
           products.map((product, index) => (
             <div className="product-card" key={index}>
-              <img src={`https://api.timbu.cloud/images/${product?.photos[0]?.url}`} alt={product.name} className="product-img" draggable="false" />
+              <img
+                src={product?.photos[0]?.url ? `https://api.timbu.cloud/images/${product.photos[0].url}` : 'path/to/placeholder-image.jpg'}
+                alt={product.name}
+                className="product-img"
+                draggable="false"
+              />
               <div className="heartCont">
                 <p className="title">{product.name}</p>
                 <p><FaRegHeart className="heart" /></p>
@@ -60,6 +65,3 @@ const Product = () => {
 };
 
 export default Product;
-
-
-
