@@ -35,7 +35,7 @@ const Navbar = () => {
               type="text"
               value={searchValue}
               onChange={handleSearchChange}
-              placeholder="Search..."
+              // placeholder="Search..."
             />
           </div>
           <NavLink to="/CartPage">

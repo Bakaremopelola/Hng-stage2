@@ -67,6 +67,36 @@
   height: 2em;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.pagination li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.pagination li a {
+  cursor: pointer;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.pagination li.active a {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination li.disabled a {
+  color: #ddd;
+}
+
+
 
 
 /* Media Queries for Responsive Design */
