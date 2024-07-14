@@ -9,7 +9,7 @@ export default defineConfig({
       "/proxy": {
         target: "https://timbu.cloud",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/proxy/, '')
+        rewrite: (path) => path.replace(/^\/api/, '')
       },
     },
   }
