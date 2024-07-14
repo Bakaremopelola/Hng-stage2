@@ -21,7 +21,7 @@ const Product = () => {
             Apikey: 'e01db212643a4df8adcec84fc49ac69920240713090305722296'
           }
         });
-        console.log('API response:', response.data); 
+        console.log('API response:', response); 
         setProducts(response.data.items || []); 
       } catch (error) {
         console.error('Error fetching products:', error);
