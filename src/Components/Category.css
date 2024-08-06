@@ -1,4 +1,12 @@
 
+
+.category{
+  display: grid;
+  place-items: center;
+  text-transform: capitalize;
+
+}
+
 .categoryBox{
    display: flex;
    justify-content: center;
