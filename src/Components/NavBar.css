@@ -74,6 +74,7 @@ input {
   transform: rotateY(180deg);
   margin: 20px;
   font-family: inter;
+  color: green;
 }
 
 .navbar-button {
